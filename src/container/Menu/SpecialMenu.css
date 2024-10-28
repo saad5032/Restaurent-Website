@@ -1,0 +1,105 @@
+.app__specialMenu {
+    flex-direction: column;
+    background: var(--color-yellow);
+}
+
+.app__specialMenu-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#h1{
+    color: var(--color-maroon);
+}
+
+.app__specialMenu-menu {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+#sec{
+    flex: 1; /* Make both sections take equal width */
+    padding: 1rem; /* Add some padding inside each section */
+}
+
+.vertical-divider {
+    width: 2px; /* Width of the divider */
+    background-color: var(--color-maroon); /* Modern dark gray color */
+    height: 65vh; /* Divider stretches to match content height */
+    margin: 0 2rem; /* Spacing around the divider */
+    position: relative;
+  }
+
+
+.app__specialMenu-menu_heading {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+ 
+}
+
+.app__specialMenu-menu_wine,
+.app__specialMenu-menu_cocktails {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__specialMenu_menu_items {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.menu-item-title {
+    color: #ff6347; /* Tomato color */
+  }
+  
+  .menu-item-price {
+    color: #4caf50; /* Green color */
+  }
+  
+  .menu-item-tags {
+    color: #999999; /* Grey color */
+  }
+
+@media screen and (min-width: 2000px) {
+    .app__specialMenu-menu_img {
+        width: 650px;
+    }
+
+    .app__specialMenu-menu_img img {
+        height: 920px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__specialMenu-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .app__specialMenu-menu_img {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__specialMenu-menu_img {
+        width: 100%;
+    }
+
+    .app__specialMenu-menu_heading {
+        font-size: 35px;
+        line-height: 48.5px;
+    }
+}

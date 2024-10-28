@@ -1,0 +1,111 @@
+/* Main container for the cart page */
+.cart-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+    min-height: 80vh;
+  }
+  
+  /* Cart details section */
+  .cart-details {
+    flex: 1;
+    padding: 1rem;
+    border-right: 2px solid #e0e0e0;
+  }
+  
+  .cart-details h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    margin-right: 1rem;
+    border-radius: 8px;
+  }
+  
+  .cart-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cart-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* User details form section */
+  .user-form {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .user-form h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .user-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .submit-button:hover {
+    background-color: #ffcc00;
+    color: #333;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .cart-page {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .cart-details {
+      border-right: none;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .user-form {
+      padding: 0;
+    }
+  }
+  

@@ -1,0 +1,116 @@
+.app__menuitem {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Align items at the start */
+}
+
+.product-card {
+    width: calc(33.333% - 20px); /* Three items in a row, adjust as needed */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.product-details {
+    text-align: left;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.buy-now-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffa41c;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+    background-color: #f08804;
+}
+
+
+/* check out button */
+/* Checkout section container */
+.checkout-section {
+  margin-top: 2rem; /* Adds some spacing above the button */
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+}
+
+/* Base style for the Checkout button */
+.checkout-button {
+  background-color: #ffcc00; /* Yellow background */
+  color: #333; /* Dark text color */
+  padding: 1rem 2rem; /* Padding for a good size */
+  font-size: 1.2rem; /* Slightly larger text size for emphasis */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  font-weight: bold; /* Make the text bold */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover state */
+.checkout-button:hover {
+  background-color: #ff9900; /* Darker yellow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active state (when button is clicked) */
+.checkout-button:active {
+  background-color: #cc7a00; /* Even darker yellow on click */
+  transform: translateY(0); /* Remove the lift effect */
+}
+
+/* Focus state (useful for keyboard navigation) */
+.checkout-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px 2px rgba(255, 204, 0, 0.7); /* Custom focus outline */
+}
+
+/* Responsive behavior: Increase padding and font size on larger screens */
+@media (min-width: 768px) {
+  .checkout-button {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.3rem;
+  }
+}
